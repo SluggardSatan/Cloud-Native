@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="Web-music.css">
+</head>
+<body>
+    <div class="container"><button>
+        <audio id="audioPlayer" controls>
+            <source src="E:\music\Web-music" type="audio/mpeg/mp3/MP3">
+        </audio></button>
+        <ul class="playlist">
+            <li data-src="E:\music\Web-music\music.mp3">Music</li>
+            <li data-src="music9.mp3">Music9</li>
+        </ul>
+        <div class="controls">
+            <button id="playPauseButton">&#9658;</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+            <div id="trackProgress">0:00 / 0:00</div>
+        </div>
+    </div>
+
+    <script src="Web-music.js"><script>
+</body>
+</html>
